@@ -1,6 +1,7 @@
 import {Routes, Route, Link } from 'react-router-dom';
 import Home from '../components/home';
 import Login from '../components/login';
+import Register from '../components/register';
 
 function Nav() {
   return (
@@ -19,6 +20,9 @@ function Nav() {
               <li className="nav-item">
                 <Link className="nav-link" to="/login">Login</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/register">Register</Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -27,6 +31,7 @@ function Nav() {
         <Routes>
           <Route path='/' element={<Home></Home>} ></Route>
           <Route path='/login' element={<Login></Login>} ></Route>
+          <Route path='/register' element={<Register></Register>} ></Route>
         </Routes>
       </div>
     </>
