@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.bg-nav-c{
+  backdrop-filter: blur(4px);
+  background: rgb(105, 105, 109);
+background: linear-gradient(90deg, rgba(128,128,140,0.5) 0%, rgba(128,128,140,0.5046393557422969) 100%);
+}
+
+.bg-img1{
+  background-image: url("/public/img/background-home-desktop.jpg");
+  background-color: #cccccc;
+}
+
+.h-divider{
+  margin-top:5px;
+  margin-bottom:5px;
+  height:1px;
+  width:100%;
+  border-top:1px solid rgb(77, 76, 76);
+ }
