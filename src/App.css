@@ -38,14 +38,38 @@
 }
 
 .bg-nav-c{
-  backdrop-filter: blur(4px);
-  background: rgb(105, 105, 109);
-background: linear-gradient(90deg, rgba(128,128,140,0.5) 0%, rgba(128,128,140,0.5046393557422969) 100%);
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.103);
+
 }
 
-.bg-img1{
+.bg-home{
   background-image: url("/public/img/background-home-desktop.jpg");
-  background-color: #cccccc;
+  background-color: #03132b;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg-destinos{
+  background-image: url("/public/img/destinos/background-destination-desktop.jpg");
+  background-color: #03132b;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg-tecnologia{
+  background-image: url("/public/img/tecnologia/background-technology-desktop.jpg");
+  background-color: #03132b;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg-tripulacion{
+  background-image: url("/public/img/tripulacion/background-crew-desktop.jpg");
+  background-color: #03132b;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .h-divider{
@@ -55,3 +79,12 @@ background: linear-gradient(90deg, rgba(128,128,140,0.5) 0%, rgba(128,128,140,0.
   width:100%;
   border-top:1px solid rgb(77, 76, 76);
  }
+
+ .circulo {
+  width: 180px;
+  height: 180px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #ffffff;
+}

@@ -1,7 +1,7 @@
 import {Routes, Route, Link } from 'react-router-dom';
-import Home from '../components/home';
-import Dashboard from '../components/dashboard';
-import AuthUser from '../components/authUser';
+import Home from '../views/public/home';
+import Dashboard from '../views/dashboard';
+import AuthUser from '../views/authUser';
 
 function Nav() {
     const {token, logout}=AuthUser();
