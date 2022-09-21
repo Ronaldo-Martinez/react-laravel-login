@@ -33,7 +33,7 @@ export default function AuthUser(){
     }
 
     const http = axios.create({
-        baseURL: "http://code-rm.tk/api",
+        baseURL: "https://code-rm.tk/api",
         headers:{
             "content-type": "application/json",
             "Authorization":`Bearer ${token}`
