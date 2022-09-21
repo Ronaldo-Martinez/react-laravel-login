@@ -8,6 +8,7 @@ export default function Destino(props){
                     </div>
                     <div className="col-6">
                         <h1>Hello, {props.name}</h1>
+                        <p className="text-danger">{props.texto}</p>
                     </div>
                 </div>
             </div>            
