@@ -1,9 +1,15 @@
 import { useState, useEffect } from "react";
 import AuthUser from "./authUser"
 
-export default function Dashboard(){
+export default function Dashboard(props){
     const {http}=AuthUser();
     const [userDatails, setUserDetails]=useState();
+
+    useEffect(() => {
+        props.setData("bg-white");
+        console.log("A")
+      }, [props]);
+    
     
     useEffect(()=>{
         fetchUserDatails();

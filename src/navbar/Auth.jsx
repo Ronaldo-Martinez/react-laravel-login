@@ -1,7 +1,9 @@
 import {Routes, Route, Link } from 'react-router-dom';
+import { useState } from "react"
 import Home from '../views/public/home';
 import Dashboard from '../views/dashboard';
 import AuthUser from '../views/authUser';
+import '../App.css';
 
 function Nav() {
     const {token, logout}=AuthUser();
@@ -10,8 +12,10 @@ function Nav() {
             logout();
         }
     }
+
+    const [data, setData] = useState("")
   return (
-    <>
+    <div className={data}>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <span className="navbar-brand"></span>
@@ -35,11 +39,11 @@ function Nav() {
       </nav>
       <div className='container'>
         <Routes>
-          <Route path='/' element={<Home></Home>} ></Route>
-          <Route path='/dashboard' element={<Dashboard></Dashboard>} ></Route>
+          <Route path='/' element={<Home setData={setData}/>}></Route>
+          <Route path='/dashboard' element={<Dashboard setData={setData}></Dashboard>} ></Route>
         </Routes>
       </div>
-    </>
+    </div>
   );
 }
 
